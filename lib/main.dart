@@ -18,6 +18,8 @@ void main() => runApp(MaterialApp(
     home: MyApp()));
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -39,7 +41,9 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text('SNS'),
-
+        actions: [
+          //IconButton(onPressed: , icon: Icon(LineIcons.comment)),
+        ],
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
