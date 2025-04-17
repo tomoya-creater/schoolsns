@@ -39,6 +39,7 @@ class _MyAppState extends State<MyApp> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text('SNS'),
+
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
