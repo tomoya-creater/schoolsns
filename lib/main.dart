@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
+import 'package:sns/funhub.dart';
 import 'package:sns/home.dart';
 import 'package:sns/like.dart';
 import 'package:sns/search.dart';
@@ -23,11 +24,10 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-  TextStyle(fontSize: 30, fontWeight: FontWeight.w600);
   static const List<Widget> _widgetOptions = <Widget>[
     Home(),
     Like(),
+    FunHub(),
     Search(),
     User(),
   ];
@@ -74,6 +74,10 @@ class _MyAppState extends State<MyApp> {
                 GButton(
                   icon: LineIcons.heart,
                   text: 'Likes',
+                ),
+                GButton(
+                  icon: LineIcons.gamepad,
+                  text:'FunHub',
                 ),
                 GButton(
                   icon: LineIcons.search,

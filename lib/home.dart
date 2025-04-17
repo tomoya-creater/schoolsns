@@ -11,9 +11,25 @@ class Home extends StatelessWidget {
           children: [
             Row(
               children: [
-                IconButton(onPressed: onPressed, icon: icon)
+
               ],
             ),
+            Row(
+              children: [
+                Card(
+                  color: Colors.brown,
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+
+                        ],
+                      ),
+                    ],
+                  ),
+                )
+              ],
+            )
           ],
         ),
       ),
