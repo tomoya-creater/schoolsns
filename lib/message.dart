@@ -9,14 +9,18 @@ class Message extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            InkWell(
-              onTap: (){
+            ListView.builder(
+              itemCount: 2,
+              itemBuilder: (context, index){
+                InkWell(
+                  onTap: (){
+                  },
+                  child: Row(
+                    children: [
+                    ],
+                  ),
+                );
               },
-              child: Row(
-                children: [
-
-                ],
-              ),
             )
           ],
         ),
