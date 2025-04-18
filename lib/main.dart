@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:line_icons/line_icons.dart';
@@ -30,15 +29,6 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int _selectedIndex = 0;
 
-  // AppBarに表示するタイトルのリスト
-  static const List<String> _appBarTitles = <String>[
-    'Home', // ホームタブのタイトル
-    'Likes', // いいねタブのタイトル
-    'FunHub', // FunHubタブのタイトル
-    'Search', // 検索タブのタイトル
-    'Profile', // プロフィールタブのタイトル
-  ];
-
   static const List<Widget> _widgetOptions = <Widget>[
     Home(),
     Like(),
@@ -51,21 +41,6 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(_appBarTitles[_selectedIndex]),
-        actions: [
-          IconButton(
-              onPressed:(){
-                if (kDebugMode) {
-                  print('Message Push');
-                }
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>Message()),);
-              },
-              icon: Icon(LineIcons.comment)
-          ),
-        ],
-      ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),

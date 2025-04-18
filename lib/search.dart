@@ -5,7 +5,11 @@ class Search extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text("Search"),
+      ),
       body: Center(
         child: Column(
           children: [

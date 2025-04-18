@@ -9,7 +9,6 @@ class Message extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text('message'),
-
       ),
       body: Center(
         child: Column(
@@ -19,6 +18,7 @@ class Message extends StatelessWidget {
               itemBuilder: (context, index){
                 InkWell(
                   onTap: (){
+
                   },
                   child: Row(
                     children: [
