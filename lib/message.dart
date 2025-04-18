@@ -25,6 +25,7 @@ class Message extends StatelessWidget {
                     ],
                   ),
                 );
+                return null;
               },
             )
           ],
