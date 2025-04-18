@@ -7,8 +7,6 @@ import 'package:sns/like.dart';
 import 'package:sns/search.dart';
 import 'package:sns/user.dart';
 
-import 'message.dart';
-
 void main() => runApp(MaterialApp(
     builder: (context, child) {
       return Directionality(textDirection: TextDirection.ltr, child: child!);
