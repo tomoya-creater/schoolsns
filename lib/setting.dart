@@ -13,11 +13,21 @@ class Setting extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            //直してません
             Card(
               color: Colors.blue.withOpacity(0.5),
               child: Column(
                 children: [
-                  Row(),
+                  Row(
+                    children: [
+                      Icon(Image.asset()),
+                      Text('Name'),
+                    ],
+                  ),
+                  TextButton(
+                      onPressed: ,
+                      child:  Text('account,develop,cash,delete'),
+                  ),
                 ],
               ),
             ),
