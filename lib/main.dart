@@ -58,10 +58,10 @@ class _MyAppState extends State<MyApp> {
             child: GNav(
               rippleColor: Colors.grey,
               hoverColor: Colors.grey,
-              gap: 8,
+              gap: 4,
               activeColor: Colors.black,
               iconSize: 24,
-              padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 12),
               duration: Duration(milliseconds: 400),
               tabBackgroundColor: Colors.grey,
               color: Colors.black,
