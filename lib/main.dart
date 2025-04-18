@@ -54,7 +54,7 @@ class _MyAppState extends State<MyApp> {
         ),
         child: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8),
             child: GNav(
               rippleColor: Colors.grey,
               hoverColor: Colors.grey,
