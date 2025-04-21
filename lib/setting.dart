@@ -20,12 +20,12 @@ class Setting extends StatelessWidget {
                 children: [
                   Row(
                     children: [
-                      Icon(Image.asset()),
+                      Icon(Image.network("https://storage.googleapis.com/cms-storage-bucket/ec64036b4eacc9f3fd73.svg") as IconData?),
                       Text('Name'),
                     ],
                   ),
                   TextButton(
-                      onPressed: ,
+                      onPressed: null,
                       child:  Text('account,develop,cash,delete'),
                   ),
                 ],
