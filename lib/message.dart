@@ -18,14 +18,13 @@ class Message extends StatelessWidget {
               itemBuilder: (context, index){
                 InkWell(
                   onTap: (){
-
+                    null;
                   },
                   child: Row(
                     children: [
                     ],
                   ),
                 );
-                return null;
               },
             )
           ],
