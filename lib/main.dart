@@ -28,10 +28,10 @@ class _MyAppState extends State<MyApp> {
   int _selectedIndex = 0;
 
   static const List<Widget> _widgetOptions = <Widget>[
-    Home(),
+    Search(),
     Like(),
     FunHub(),
-    Search(),
+    Home(),
     User(),
   ];
 
@@ -72,15 +72,15 @@ class _MyAppState extends State<MyApp> {
                 ),
                 GButton(
                   icon: LineIcons.heart,
-                  text: 'Likes',
+                  text: 'Notify',
                 ),
                 GButton(
                   icon: LineIcons.gamepad,
                   text:'FunHub',
                 ),
                 GButton(
-                  icon: LineIcons.search,
-                  text: 'Search',
+                  icon: LineIcons.mailBulk,
+                  text: 'Message',
                 ),
                 GButton(
                   icon: LineIcons.user,
