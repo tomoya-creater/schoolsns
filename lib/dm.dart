@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:line_icons/line_icons.dart';
-
-import 'message.dart';
 
 class DM extends StatelessWidget {
   const DM({super.key});
@@ -11,7 +8,7 @@ class DM extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("DM"),
+        title: Text("Message"),
       ),
       body: const Center(
         child: Column(
