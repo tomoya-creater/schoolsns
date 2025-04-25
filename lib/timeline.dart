@@ -74,7 +74,10 @@ class _SearchState extends State<TimeLine> {
                         isMagicTagEnabled = value;
                       });
                       ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(content: Text('MagicTagは有効です。')),
+                        SnackBar(
+                          content: Text(value ?  'MagicTagは有効です。': 'MagicTagは無効です。'),
+                          duration: const Duration(seconds: 3),
+                        ),
                       );
                     },
                   ),
