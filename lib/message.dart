@@ -22,11 +22,12 @@ class Message extends StatelessWidget {
                   },
                   child: Row(
                     children: [
+
                     ],
                   ),
                 );
               },
-            )
+            ),
           ],
         ),
       ),
