@@ -15,6 +15,7 @@ void main() => runApp(MaterialApp(
     theme: ThemeData(
       primaryColor: Colors.grey[800],
     ),
+    darkTheme: ThemeData.dark(),
     home: MyApp()));
 
 class MyApp extends StatefulWidget {
