@@ -87,7 +87,7 @@ class _SearchState extends State<TimeLine> {
                     onTap: () {
                       Navigator.pop(context); // メニューを閉じる
                       // 設定画面への遷移やその他の処理をここに追加
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Setting()),);
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Setting(changeTheme: (ThemeMode ) {  },)),);
                     },
                   ),
                 ],
