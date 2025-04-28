@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:sns/search.dart';
-import 'package:sns/setting.dart';
 
 class TimeLine extends StatefulWidget {
   const TimeLine({super.key});
@@ -79,15 +78,6 @@ class _SearchState extends State<TimeLine> {
                           duration: const Duration(seconds: 3),
                         ),
                       );
-                    },
-                  ),
-                  ListTile(
-                    title: const Text('その他設定'),
-                    leading: const Icon(Icons.settings),
-                    onTap: () {
-                      Navigator.pop(context); // メニューを閉じる
-                      // 設定画面への遷移やその他の処理をここに追加
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Setting(changeTheme: (ThemeMode ) {  },)),);
                     },
                   ),
                 ],
